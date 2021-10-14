@@ -13,7 +13,7 @@ export const Header = () => {
                 <div className="settings">
                     <ul>
                         <li>+</li>
-                        <li>Pizza Slice!</li>
+                        <li>Pizza Slice!!</li>
                     </ul>
                 </div>
             </nav>
