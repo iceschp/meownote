@@ -6,10 +6,12 @@ import { ProjectsProvider, SelectedProjectProvider } from "./context";
 export const App = () => {
 
   return (
-    <div className="App">
-      <Header />
-      <Content />
-    </div>
+    <SelectedProjectProvider>
+      <div className="App">
+        <Header />
+        <Content />
+      </div>
+    </SelectedProjectProvider>
   )
 };
 
