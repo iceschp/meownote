@@ -10,6 +10,7 @@ import { useSelectedProjectValue } from "../../context";
 export const Sidebar = () => {
     const { setSelectedProject } = useSelectedProjectValue;
     const [ active, setActive ] = useState('inbox');
+    const [ showProjects, setShowProjects ] = useState(TestRunner);
 
     return (
     <div className="sidebar" data-testid="sidebar">
