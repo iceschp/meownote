@@ -4,8 +4,8 @@ import { firebase } from '../firebase';
 import { collatedTasksExist } from '../helpers';
 
 export const useTasks = selectedProject => {
-  const [tasks, setTasks] = useState([]);
-  const [archivedTasks, setArchivedTasks] = useState([]);
+  const [ tasks, setTasks ] = useState([]);
+  const [ archivedTasks, setArchivedTasks ] = useState([]);
 
   useEffect(() => {
     let unsubscribe = firebase
