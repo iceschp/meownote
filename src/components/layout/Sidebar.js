@@ -12,20 +12,20 @@ export const Sidebar = () => (
         <li>
             <span>
                 <FaInbox />
-                </span>
-                <span>Inbox</span>
+            </span>
+            <span>Inbox</span>
         </li>
         <li>
             <span>
                 <FaRegCalendar />
             </span>
-                <span>Today</span>
+            <span>Today</span>
         </li>
         <li>
             <span>
                 <FaRegCalendarAlt />
             </span>
-                <span>Next 7 days</span>
+            <span>Next 7 days</span>
         </li>
     </ul>
     <div className="sidebar__middle">
