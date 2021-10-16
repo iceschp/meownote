@@ -5,11 +5,12 @@ export const SelectedProjectProvider = ({ children }) => {
     const { selectedProject, setSelectedProject } = useState('INBOX');
 
     return (
-        <ProjectsContext.Provider value={{ projects, setProjects }}>
+        <SelectedProjectContext.Provider 
+        value={{ selectedProject, setSelectedProject }}>
             { children }
-        </ProjectsContext.Provider>
+        </SelectedProjectContext.Provider>
     );
 };
 
-export const useProjectsValue = () => useContext(ProjectsContext);
+export const useSelectedProjectedValue = () => useContext(SelectedProjectContext);
 
