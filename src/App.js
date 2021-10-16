@@ -4,15 +4,14 @@ import { Content } from "./components/layout/Content";
 import { ProjectsProvider, SelectedProjectProvider } from "./context";
 
 export const App = () => {
-
-  return (
-    <SelectedProjectProvider>
+  <SelectedProjectProvider>
+    <ProjectsProvider>
       <div className="App">
         <Header />
         <Content />
       </div>
-    </SelectedProjectProvider>
-  )
-};
+      </ProjectsProvider>
+  </SelectedProjectProvider>
+);
 
 export default App;
