@@ -1,22 +1,49 @@
-import React from "react";
-import { Checkbox } from "../components/Checkbox";
-import { useTasks } from "../hooks";
+import React, { useState, useEffect } from 'react';
+import { Checkbox } from './Checkbox';
+import { useTasks } from '../hooks';
+import { collatedTasks } from '../constants';
+import { getTitle, getCollatedTitle, collatedTasksExist } from '../helpers';
+import { useSelectedProjectValue, useProjectsValue } from '../context';
 
 export const Tasks = () => {
-    const {tasks} = useTasks(1);
-    console.log(tasks)
-    const projectName = '';
-    return (
-        <div className="tasks" data-testid="tasks">
-            <h2 data-testid="project-name">{projectName}</h2>
-            <ul className="taks__list">
-                {tasks.map(task => (
-                    <li key={`${task.id}`}>
-                        <Checkbox id={task.id} />
-                        <span>{task.task}</span>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
+  const { selectedProject } = useSelectedProjectValue();
+  const { projects } = useProjectsValue();
+  const { tasks } = useTasks(selectedProject);
+
+  let projectName = '';
+
+  if (collatedTasksExist(selectedProject) && selectedProject) {
+    projectName = getCollatedTitle(collatedTasks, selectedProject).name;
+  }
+
+  if (
+    projects &&
+    projects.length > 0 &&
+    selectedProject &&
+    !collatedTasksExist(selectedProject)
+  ) {
+    projectName = getTitle(projects, selectedProject).name;
+  }
+
+  useEffect(() => {
+    document.title = `${projectName}: meownote`;
+  });
+
+  console.log('tasks',tasks);
+
+  return (
+    <div className="tasks" data-testid="tasks">
+      <h2 data-testid="project-name">{projectName}</h2>
+
+      <ul className="tasks__list">
+        {tasks.map((task) => (
+          <li key={`${task.id}`}>
+            <Checkbox id={task.id} taskDesc={task.task} />
+            <span>{task.task}</span>
+          </li>
+        ))}
+      </ul>
+
+    </div>
+  );
 };
