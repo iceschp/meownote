@@ -8,13 +8,15 @@ export const Projects = ({ activeValue = null }) => {
   const { setSelectedProject } = useSelectedProjectValue();
   const { projects } = useProjectsValue();
 
+  console.log('projects', projects.length);
+
   return (
     projects &&
     projects.map((project) => (
       <li
         key={project.projectId}
-        data-testid="project-action-parent"
         data-doc-id={project.docId}
+        data-testid="project-action-parent"
         className={
           active === project.projectId
             ? 'active sidebar__project'
