@@ -8,15 +8,16 @@ export const Header = () => {
         <header className="header" data-testid="header">
             <nav>
                 <div className="logo">
-                    <p>🐱</p>
-                    <img src="/images/logo.png" alt="meownote" />
+                    <img src="/public/images/meownote-logo.png" alt="meownote logo" />
                 </div>
                 <div className="settings">
                     <ul>
                         <li data-testid="quick-add-action" className="settings__add">
-                            +</li>
+                            +
+                        </li>
                         <li data-testid="dark-mode-action" className="settings__darkmode">
-                            <FaPizzaSlice /></li>
+                            <FaPizzaSlice />
+                        </li>
                     </ul>
                 </div>
             </nav>
