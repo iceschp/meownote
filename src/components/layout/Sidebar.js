@@ -21,7 +21,8 @@ export const Sidebar = () => {
             data-testid="inbox"
             className="inbox"
             onClick={() => {
-                setActive('inbox')
+                setActive('inbox');
+                setSelectedProject('INBOX');
             }}
             >
             <span>
