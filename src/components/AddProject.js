@@ -46,6 +46,13 @@ export const AddProject = ({ shouldShow = false }) => {
                     >
                         Add Project
                     </button>
+                    <span
+                        data-testid = "hide-project-overlay"
+                        className = "add-project__cancel"
+                        onClick = {() => setShow(false)}
+                    >
+                        Cancel
+                    </span>
                 </div>
             )}
         </div>
