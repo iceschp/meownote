@@ -10,7 +10,7 @@ import { AddProject } from "../AddProject";
 import { Projects } from "../Projects";
 
 export const Sidebar = () => {
-    const { setSelectedProject } = useSelectedProjectValue;
+    const { setSelectedProject } = useSelectedProjectValue();
     const [ active, setActive ] = useState('inbox');
     const [ showProjects, setShowProjects ] = useState(true);
 
