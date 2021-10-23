@@ -6,7 +6,7 @@ import { useSelectedProjectValue } from "../context";
 
 export const AddTask = ({ 
     showAddTaskMain = true, 
-    showShouldMain = false, 
+    shouldShowMain = false, 
     showQuickAddTask, 
     setShowQuickAddTask,
 }) => {
