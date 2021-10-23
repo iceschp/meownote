@@ -18,9 +18,9 @@ export const Sidebar = () => {
     <div className="sidebar" data-testid="sidebar">
     <ul className="sidebar_generic">
         <li
-            data-testid="inbox"
-            className="inbox"
-            onClick={() => {
+            data-testid = "inbox"
+            className =  { active === 'inbox' ? 'active' }
+            onClick = {() => {
                 setActive('inbox');
                 setSelectedProject('INBOX');
             }}
