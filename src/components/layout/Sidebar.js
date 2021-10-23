@@ -19,7 +19,7 @@ export const Sidebar = () => {
     <ul className="sidebar_generic">
         <li
             data-testid = "inbox"
-            className =  { active === 'inbox' ? 'active' }
+            className =  { active === 'inbox' ? 'active' : undefined }
             onClick = {() => {
                 setActive('inbox');
                 setSelectedProject('INBOX');
