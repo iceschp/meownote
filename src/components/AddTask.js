@@ -119,6 +119,13 @@ export const AddTask = ({
                             Cancel
                         </span>
                     )}
+                    <span
+                        className = "add-task__project"
+                        data-testid = "show-project-overlay"
+                        onClick = {() => setShowProjectOverlay(!showProjectOverlay)}
+                    >
+                        <FaRegListAlt />
+                    </span>
                 </div>
             )}
         </div>
