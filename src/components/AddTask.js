@@ -30,9 +30,27 @@ export const AddTask = ({
                 .add(7, 'days')
                 .format('DD/MM/YYYY');
         }
-    }
+        return (
+            task &&
+            projectId &&
+            firebase
+                .firestore()
+                .collection('tasks')
+                .add({
+                    archived: false,
+                    projectId,
+                    task,
+                    date: collatedDate || taskDate,
+                    userId: 'a24f0ccdd660485fab245837b7bb223c'
+                })
+                .then(() => {
+                    setTask('');
+                    setProject('');
+                    setShowMain('');
+                    setShowProjectOverlay('');
+                })
+            );
+    };
 
-    return (
-        
-    );
+    return ();
 }
