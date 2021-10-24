@@ -21,7 +21,7 @@ export const AddProject = ({ shouldShow = false }) => {
                 userId: 'a24f0ccdd660485fab245837b7bb223c'
             })
             .then(() => {
-                setProjects([]);
+                setProjects([...projects]);
                 setProjectName('');
                 setShow(false);
             });
