@@ -89,6 +89,13 @@ export const AddTask = ({
                                     setShowProjectOverlay(false);
                                     setShowQuickAddTask(false);
                                 }}
+                                onKeyDown = {() => {
+                                    setShowMain(false);
+                                    setShowProjectOverlay(false);
+                                    setShowQuickAddTask(false);
+                                }}
+                                tabIndex = {0}
+                                role = "button"
                                 >
                                     x
                                 </span>
