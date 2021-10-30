@@ -138,6 +138,12 @@ export const AddTask = ({
                                 setShowMain(false);
                                 setShowProjectOverlay(false);
                             }}
+                            onKeyPress = {() => {
+                                setShowMain(false);
+                                setShowProjectOverlay(false);
+                            }}
+                            tabIndex = {0}
+                            role = "button"
                         >
                             Cancel
                         </span>
