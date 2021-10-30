@@ -84,7 +84,8 @@ export const Sidebar = () => {
     </ul>
     <div 
         className = "sidebar__middle"
-        onClick = {() => setShowProjects(!showProjects) }
+        onClick = {() => setShowProjects(!showProjects)}
+        onKeyDown = {() => setShowProjects(!showProjects)}
         >
         <span>
             <FaChevronDown 
