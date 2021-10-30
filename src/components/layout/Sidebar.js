@@ -62,11 +62,19 @@ export const Sidebar = () => {
         <li 
             data-testid = "next_7"
             className =  { active === 'next_7' ? 'active' : undefined }
-            onClick = {() => {
-            setActive('next_7');
-            setSelectedProject('NEXT_7');
-        }}
         >
+        <div
+            tabIndex = {0}
+            role = "button"
+            onClick = {() => {
+                setActive('next_7');
+                setSelectedProject('NEXT_7');
+            }}
+            onKeyDown = {() => {
+                setActive('next_7');
+                setSelectedProject('NEXT_7');
+            }}
+        />
             <span>
                 <FaRegCalendarAlt />
             </span>
