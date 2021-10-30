@@ -52,12 +52,12 @@ export const Sidebar = () => {
                     setActive('today');
                     setSelectedProject('TODAY');
                 }}
-                >
+            >
+                <span>
+                    <FaRegCalendar />
+                </span>
+                <span>Today</span>
             </div>
-            <span>
-                <FaRegCalendar />
-            </span>
-            <span>Today</span>
         </li>
         <li 
             data-testid = "next_7"
