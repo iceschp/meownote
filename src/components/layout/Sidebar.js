@@ -22,8 +22,8 @@ export const Sidebar = () => {
             className =  { active === 'inbox' ? 'active' : undefined }
             >
             <div
-                tabIndex={0}
-                role="button"
+                tabIndex = {0}
+                role = "button"
                 onClick = {() => {
                     setActive('inbox');
                     setSelectedProject('INBOX');
