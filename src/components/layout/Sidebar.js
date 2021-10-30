@@ -20,12 +20,19 @@ export const Sidebar = () => {
         <li
             data-testid = "inbox"
             className =  { active === 'inbox' ? 'active' : undefined }
-            onClick = {() => {
-                setActive('inbox');
-                setSelectedProject('INBOX');
+            >
+            <span
+                tabIndex={0}
+                role="button"
+                onClick = {() => {
+                    setActive('inbox');
+                    setSelectedProject('INBOX');
+            }}
+                onKeyDown = {() => {
+                    setActive('inbox');
+                    setSelectedProject('INBOX');
             }}
             >
-            <span>
                 <FaInbox />
             </span>
             <span>Inbox</span>
