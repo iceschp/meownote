@@ -21,7 +21,7 @@ export const Sidebar = () => {
             data-testid = "inbox"
             className =  { active === 'inbox' ? 'active' : undefined }
             >
-            <span
+            <div
                 tabIndex={0}
                 role="button"
                 onClick = {() => {
@@ -34,7 +34,7 @@ export const Sidebar = () => {
             }}
             >
                 <FaInbox />
-            </span>
+            </div>
             <span>Inbox</span>
         </li>
         <li
