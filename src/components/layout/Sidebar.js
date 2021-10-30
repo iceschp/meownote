@@ -40,11 +40,20 @@ export const Sidebar = () => {
         <li
             data-testid = "today"
             className =  { active === 'today' ? 'active' : undefined }
-            onClick = {() => {
-            setActive('today');
-            setSelectedProject('TODAY');
-        }}
         >
+            <div
+                tabIndex = {0}
+                role = "button"
+                onClick = {() => {
+                    setActive('today');
+                    setSelectedProject('TODAY');
+                }}
+                onKeyDown = {() => {
+                    setActive('today');
+                    setSelectedProject('TODAY');
+                }}
+                >
+            </div>
             <span>
                 <FaRegCalendar />
             </span>
