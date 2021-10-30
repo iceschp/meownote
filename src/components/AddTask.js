@@ -152,6 +152,9 @@ export const AddTask = ({
                         className = "add-task__project"
                         data-testid = "show-project-overlay"
                         onClick = {() => setShowProjectOverlay(!showProjectOverlay)}
+                        onKeyDown = {() => setShowProjectOverlay(!showProjectOverlay)}
+                        tabIndex = {0}
+                        role = "button"
                     >
                         <FaRegListAlt />
                     </span>
