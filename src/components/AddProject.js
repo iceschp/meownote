@@ -8,7 +8,7 @@ export const AddProject = ({ shouldShow = false }) => {
     const [ projectName, setProjectName ] = useState('');
 
     const projectId = generatePushId();
-    const { setProjects } = useProjectsValue();
+    const { projects, setProjects } = useProjectsValue();
 
     const AddProject = () =>
         projectName &&
