@@ -162,6 +162,9 @@ export const AddTask = ({
                         className = "add-task__date"
                         data-testid = "show-task-date-overlay"
                         onClick = {() => setShowTaskDate(!showTaskDate)}
+                        onKeyDown = {() => setShowTaskDate(!showTaskDate)}
+                        tabIndex = {0}
+                        role = "button"
                     >
                         <FaRegCalendarAlt />
                     </span>
