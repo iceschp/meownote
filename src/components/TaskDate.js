@@ -24,21 +24,32 @@ export const TaskDate = ({ setTaskDate, showTaskDate, setShowTaskDate}) => showT
                 <span>Today</span>
             </div>
             </li>
-            <li
-            onClick={() => {
-                setShowTaskDate(false);
-                setTaskDate(
-                    moment()
-                        .add(1,'day')
-                        .format('DD/MM/YYYY')
+            <li data-testid="task-date-tomorrow">
+            <div
+                onClick={() => {
+                    setShowTaskDate(false);
+                    setTaskDate(
+                        moment()
+                            .add(1,'day')
+                            .format('DD/MM/YYYY')
                 );
             }}
-                data-testid="task-date-tomorrow"
+                onKeyDown={() => {
+                    setShowTaskDate(false);
+                    setTaskDate(
+                        moment()
+                            .add(1,'day')
+                            .format('DD/MM/YYYY')
+                );
+            }}
+            role="button"
+            tabIndex={0}
             >
                 <span>
                     <FaSun/>
                 </span>
                 <span>Tomorrow</span>
+            </div>
             </li>
             <li
             onClick={() => {
