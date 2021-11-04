@@ -22,6 +22,7 @@ export const Sidebar = () => {
             className={ active === 'inbox' ? 'active' : undefined }
             >
             <div
+                aria-label="Show Inbox Tasks"
                 tabIndex={0}
                 role="button"
                 onClick={() => {
