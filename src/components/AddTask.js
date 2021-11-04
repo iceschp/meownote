@@ -76,8 +76,7 @@ export const AddTask = ({
             {( showMain || showQuickAddTask) && (
                 <div 
                 className="add-task__main"
-                data-testid="add-task-main"
-                >
+                data-testid="add-task-main">
                     {showQuickAddTask && (
                         <>
                         <div data-testid="quick-add-task">
@@ -85,6 +84,7 @@ export const AddTask = ({
                             <span
                                 className="add-task__cancel-x"
                                 data-testid="add-task-quick-cancel"
+                                aria-label="Cancel adding task"
                                 onClick={() => {
                                     setShowMain(false);
                                     setShowProjectOverlay(false);
@@ -144,6 +144,7 @@ export const AddTask = ({
                                 setShowMain(false);
                                 setShowProjectOverlay(false);
                             }}
+                            aria-label="Cancel addng a task"
                             tabIndex={0}
                             role="button"
                         >
