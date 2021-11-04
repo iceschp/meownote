@@ -33,9 +33,11 @@ export const Sidebar = () => {
                     setSelectedProject('INBOX');
             }}
             >
+            <span>
                 <FaInbox />
-            </div>
+            </span>
             <span>Inbox</span>
+            </div>
         </li>
         <li
             data-testid = "today"
