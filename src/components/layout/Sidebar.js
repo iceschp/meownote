@@ -89,6 +89,7 @@ export const Sidebar = () => {
     </ul>
     <div 
         className="sidebar__middle"
+        aria-label="Show/Hide Projects"
         onClick={() => setShowProjects(!showProjects)}
         onKeyDown={() => setShowProjects(!showProjects)}
         role="button"
