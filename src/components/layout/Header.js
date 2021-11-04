@@ -7,12 +7,12 @@ export const Header = ({ darkMode, setDarkMode }) => {
     const   [showQuickAddTask, setShowQuickAddTask] = useState(false);
 
     return (
-        <header className="header" data-testid="header">
-            <nav>
-                <div className="logo">
-                    <img src="/images/meownote-logo.png" alt="meownote logo" />
-                </div>
-                <div className="settings">
+      <header className="header" data-testid="header">
+        <nav>
+          <div className="logo">
+            <img src="/images/meownote-logo.png" alt="meownote logo" />
+          </div>
+          <div className="settings">
           <ul>
             <li className="settings__add">
               <button
@@ -22,11 +22,8 @@ export const Header = ({ darkMode, setDarkMode }) => {
                 onClick={() => {
                   setShowQuickAddTask(true);
                   setShouldShowMain(true);
-
                 }}
-              >
-                +
-              </button>
+              >+</button>
             </li>
             <li className="settings__darkmode">
               <button
@@ -39,18 +36,13 @@ export const Header = ({ darkMode, setDarkMode }) => {
               </button>
             </li>
           </ul>
-        </div>
-                
-            </nav>
-
-            <AddTask 
-               showAddTaskMain={false}
-               shouldShowMain={shouldShowMain}
-               showQuickAddTask={showQuickAddTask}
-               setShowQuickAddTask={setShowQuickAddTask} />
-
-            
-        </header>
-
+          </div>
+        </nav>
+        <AddTask 
+          showAddTaskMain={false}
+          shouldShowMain={shouldShowMain}
+          showQuickAddTask={showQuickAddTask}
+          setShowQuickAddTask={setShowQuickAddTask} />
+      </header>
     )
 };
