@@ -56,14 +56,14 @@ export const AddTask = ({
 
     return (
         <div
-            className = { showQuickAddTask ? 'add-task add-task__overlay' : 'add-task' }
-            data-testid = "add-task-comp"
+            className={ showQuickAddTask ? 'add-task add-task__overlay' : 'add-task' }
+            data-testid="add-task-comp"
         >
             { showAddTaskMain && (
                 <div
-                    className = "add-task__shallow"
-                    data-testid = "show-main-action"
-                    onClick = {() => setShowMain(!showMain)}
+                    className="add-task__shallow"
+                    data-testid="show-main-action"
+                    onClick={() => setShowMain(!showMain)}
                     onKeyDown={() => setShowMain(!showMain)}
                     tabIndex={0}
                     role="button"
@@ -74,31 +74,31 @@ export const AddTask = ({
             )}
             {( showMain || showQuickAddTask) && (
                 <div 
-                className = "add-task__main"
-                data-testid = "add-task-main"
+                className="add-task__main"
+                data-testid="add-task-main"
                 >
                     {showQuickAddTask && (
                         <>
-                        <div data-testid = "quick-add-task">
-                            <h2 className = "header">Quick Add Task</h2>
+                        <div data-testid="quick-add-task">
+                            <h2 className="header">Quick Add Task</h2>
                             <span
-                                className = "add-task__cancel-x"
-                                data-testid = "add-task-quick-cancel"
-                                onClick = {() => {
+                                className="add-task__cancel-x"
+                                data-testid="add-task-quick-cancel"
+                                onClick={() => {
                                     setShowMain(false);
                                     setShowProjectOverlay(false);
                                     setShowQuickAddTask(false);
                                 }}
-                                onKeyDown = {() => {
+                                onKeyDown={() => {
                                     setShowMain(false);
                                     setShowProjectOverlay(false);
                                     setShowQuickAddTask(false);
                                 }}
-                                tabIndex = {0}
-                                role = "button"
+                                tabIndex={0}
+                                role="button"
                                 >
                                     x
-                                </span>
+                            </span>
                         </div>
                         </>
                     )}
@@ -113,17 +113,18 @@ export const AddTask = ({
                     setShowTaskDate={setShowTaskDate}
                     />
                     <input
-                        className = "add-task__content"
-                        data-testid = "add-task-content"
-                        type = "text"
-                        value = {task}
-                        onChange = {e => setTask(e.target.value)}
+                        className="add-task__content"
+                        aria-label="Enter your task"
+                        data-testid="add-task-content"
+                        type="text"
+                        value={task}
+                        onChange={e => setTask(e.target.value)}
                     />
                     <button
-                        type = "button"
-                        className = "add-task__submit"
-                        data-testid = "add-task"
-                        onClick = {() => showQuickAddTask 
+                        type="button"
+                        className="add-task__submit"
+                        data-testid="add-task"
+                        onClick={() => showQuickAddTask 
                             ? addTask() && setShowQuickAddTask(false)
                             : addTask()
                         }
@@ -132,39 +133,39 @@ export const AddTask = ({
                     </button>
                     {!showQuickAddTask && (
                         <span
-                            className = "add-task__cancel"
-                            data-testid = "add-task-main-cancel"
-                            onClick = {() => {
+                            className="add-task__cancel"
+                            data-testid="add-task-main-cancel"
+                            onClick={() => {
                                 setShowMain(false);
                                 setShowProjectOverlay(false);
                             }}
-                            onKeyPress = {() => {
+                            onKeyPress={() => {
                                 setShowMain(false);
                                 setShowProjectOverlay(false);
                             }}
-                            tabIndex = {0}
-                            role = "button"
+                            tabIndex={0}
+                            role="button"
                         >
                             Cancel
                         </span>
                     )}
                     <span
-                        className = "add-task__project"
-                        data-testid = "show-project-overlay"
-                        onClick = {() => setShowProjectOverlay(!showProjectOverlay)}
-                        onKeyDown = {() => setShowProjectOverlay(!showProjectOverlay)}
-                        tabIndex = {0}
-                        role = "button"
+                        className="add-task__project"
+                        data-testid="show-project-overlay"
+                        onClick={() => setShowProjectOverlay(!showProjectOverlay)}
+                        onKeyDown={() => setShowProjectOverlay(!showProjectOverlay)}
+                        tabIndex={0}
+                        role="button"
                     >
                         <FaRegListAlt />
                     </span>
                     <span
-                        className = "add-task__date"
-                        data-testid = "show-task-date-overlay"
-                        onClick = {() => setShowTaskDate(!showTaskDate)}
-                        onKeyDown = {() => setShowTaskDate(!showTaskDate)}
-                        tabIndex = {0}
-                        role = "button"
+                        className="add-task__date"
+                        data-testid="show-task-date-overlay"
+                        onClick={() => setShowTaskDate(!showTaskDate)}
+                        onKeyDown={() => setShowTaskDate(!showTaskDate)}
+                        tabIndex={0}
+                        role="button"
                     >
                         <FaRegCalendarAlt />
                     </span>
