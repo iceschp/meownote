@@ -17,7 +17,9 @@ export const Tasks = () => {
     projectName = getCollatedTitle(collatedTasks, selectedProject).name;
   }
 
+  
   if (
+    projects &&
     projects.length > 0 &&
     selectedProject &&
     !collatedTasksExist(selectedProject)
@@ -26,7 +28,7 @@ export const Tasks = () => {
   }
 
   useEffect(() => {
-    document.title = `${projectName}: meownote`;
+    document.title = `${projectName}: Todoist`;
   });
 
   return (
