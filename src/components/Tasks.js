@@ -17,7 +17,6 @@ export const Tasks = () => {
     projectName = getCollatedTitle(collatedTasks, selectedProject).name;
   }
 
-  
   if (
     projects &&
     projects.length > 0 &&
@@ -28,7 +27,7 @@ export const Tasks = () => {
   }
 
   useEffect(() => {
-    document.title = `${projectName}: Todoist`;
+    document.title = `${projectName}: meownote-web`;
   });
 
   return (
@@ -43,7 +42,8 @@ export const Tasks = () => {
           </li>
         ))}
       </ul>
-        <AddTask />
+
+      <AddTask />
     </div>
   );
 };

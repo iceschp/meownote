@@ -193,7 +193,7 @@ header nav div.settings ul li.settings__darkmode button svg {
   display: none;
 }
 .sidebar__project-delete svg {
-  color: #cacaca;
+  color: #cf4534;
 }
 .sidebar__project.active, .sidebar__project:hover {
   font-weight: bold;
@@ -297,6 +297,7 @@ header nav div.settings ul li.settings__darkmode button svg {
 .project-delete-modal {
   position: relative;
   
+  
 }
 /* Main Content
   ============================================ */
@@ -319,17 +320,20 @@ header nav div.settings ul li.settings__darkmode button svg {
   border-radius: 3px;
   z-index: 99;
   width: 200px;
-  padding: 10px;
+  height: 200px;
   top: 10px;
   right: 0;
+  margin: 50px;
   background-color: white;
 }
 .project-delete-modal__inner p {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   line-height: normal;
   font-weight: normal;
   font-size: 15px;
+  
+  
 }
 .project-delete-modal__inner button {
   width: '50px';
