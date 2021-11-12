@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { FaPizzaSlice } from 'react-icons/fa';
+import { BsMoonStarsFill } from 'react-icons/bs'
 import { AddTask } from "../AddTask";
 
 export const Header = ({ darkMode, setDarkMode }) => {
-    const   [shouldShowMain, setShouldShowMain] = useState(false);
-    const   [showQuickAddTask, setShowQuickAddTask] = useState(false);
+    const [ shouldShowMain, setShouldShowMain ] = useState(false);
+    const [ showQuickAddTask, setShowQuickAddTask ] = useState(false);
 
     return (
       <header className="header" data-testid="header">
@@ -32,7 +32,7 @@ export const Header = ({ darkMode, setDarkMode }) => {
                 type="button"
                 onClick={() => setDarkMode(!darkMode)}
               >
-                <FaPizzaSlice />
+                <BsMoonStarsFill />
               </button>
             </li>
           </ul>
