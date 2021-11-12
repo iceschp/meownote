@@ -1,6 +1,6 @@
 
 /* ==========================================================================
-   LETS BUILD MEOW
+LETS BUILD MEOW
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
 /* Mixins
@@ -38,10 +38,11 @@ ul {
   background-color: #282828;
   border-color: transparent;
 }
+/* background-color: #db4c3f; */
 
 header {
-  border-bottom: solid 1px #ca2100;
-  background-color: #db4c3f;
+  border-bottom: solid 1px #F7F5F4;
+  background-color: #F7F5F4;
   -webkit-transition: height 200ms ease-in;
   transition: height 200ms ease-in;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
@@ -115,7 +116,7 @@ header nav div.settings ul li {
 }
 header nav div.settings ul li:hover {
   border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(148, 148, 148, 0.39);
 }
 header nav div.settings ul li.settings__add {
   margin-right: 15px;
@@ -124,13 +125,13 @@ header nav div.settings ul li.settings__add {
 header nav div.settings ul li.settings__add button {
   background-color: transparent;
   border: 0;
-  color: white;
+  color: #DD5D38;
   cursor: pointer;
 }
 header nav div.settings ul li.settings__darkmode button {
   background-color: transparent;
   border: 0;
-  color: white;
+  color: #777777;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
