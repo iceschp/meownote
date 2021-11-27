@@ -106,7 +106,15 @@ export const Sidebar = () => {
 
     <ul className="sidebar__projects">{ showProjects && <Projects/> }</ul>
         { showProjects && < AddProject/> }
-        <h1>Test button</h1>
+    
+    <div
+        className="sidebar__middle"
+        aria-label="Show Spotify playlist"
+        role="button"
+        tabIndex={0}
+    >
+        <h2>Spotify</h2>
+    </div>
 </div>
 );
 };
