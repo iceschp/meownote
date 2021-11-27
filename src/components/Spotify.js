@@ -9,3 +9,7 @@ export const Spotify = ({}) => {
         </div>
     )
 }
+
+Projects.propTypes = {
+    activeValue: PropTypes.bool,
+};
