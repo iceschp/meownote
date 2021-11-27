@@ -1,6 +1,6 @@
 import react from "react";
-import { render,cleanup, fireEvent } from '@testing-library/react';
-import { Checkbox } from "../components/Checkbox";
+import { render,cleanup} from '@testing-library/react';
+import { App } from "../App";
 
 beforeEach(cleanup); // clean meeeeeee!
 
@@ -18,8 +18,7 @@ describe('<App/>',()=> {
         expect(queryByTestId('application')).toBeTruthy();
         expect(
             queryByTestId('application').classList.contains('darkmode')  
-        ).toBeTruthy();
+        ).toBeFalsy();
     });
 
-    
 });
