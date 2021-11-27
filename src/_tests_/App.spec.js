@@ -9,4 +9,11 @@ describe('<App/>',()=> {
         const{queryByTestId,debug} = render(<App />);
         expect(queryByTestId('application')).toBeTruthy();
     });
+    it('renders the application',()=> {
+        const{queryByTestId,debug} = render(<App darkModeDefault />);
+        debug();
+        expect(queryByTestId('application')).toBeTruthy();
+    });
+
+    
 });

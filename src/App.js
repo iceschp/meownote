@@ -6,6 +6,8 @@ import { ProjectsProvider, SelectedProjectProvider } from "./context";
 export const App = ({ darkModeDefault = false }) => {
   const [darkMode, setDarkMode] = useState(darkModeDefault);
 
+  console.log(darkModeDefault)
+
   return (
     <SelectedProjectProvider>
       <ProjectsProvider>
