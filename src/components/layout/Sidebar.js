@@ -8,6 +8,7 @@ import {
 import { useSelectedProjectValue } from "../../context";
 import { AddProject } from "../AddProject";
 import { Projects } from "../Projects";
+import { Spotify } from "../Spotify";
 
 export const Sidebar = () => {
     const { setSelectedProject } = useSelectedProjectValue();
