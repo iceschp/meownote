@@ -4,6 +4,7 @@ import {
     FaInbox,
     FaRegCalendarAlt,
     FaRegCalendar,
+    FaMusic
 } from "react-icons/fa";
 import { useSelectedProjectValue } from "../../context";
 import { AddProject } from "../AddProject";
@@ -113,7 +114,10 @@ export const Sidebar = () => {
         role="button"
         tabIndex={0}
     >
-        <h2>Spotify</h2>
+        <span>
+            <FaMusic />
+        </span>
+        <span><h2>Spotify</h2></span>
     </div>
 </div>
 );
