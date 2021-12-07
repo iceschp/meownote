@@ -745,6 +745,19 @@ header nav div.settings ul li.settings__darkmode button svg {
     flex-direction: row;
     column-gap: 3rem;
   }
+  .signup__btn {
+    transition: 0.3s;
+    background-color: #3C41E6;
+    color: #fff;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid;
+  }
+  .signup__btn:hover {
+    background-color: #282828;
+  }
 
   .container {
     margin-left: auto;
@@ -824,6 +837,7 @@ header nav div.settings ul li.settings__darkmode button svg {
   height: 50px;
   border-radius: 10px;
   border: solid;
+  transition: 0.3s;
 }
 .bottom__box button:hover {
   background-color: #3C41E6;

@@ -22,6 +22,12 @@ export const Navbar = () => {
                         <li class="nav__item">
                             <a href="#AboutUs" class="nav__link">About Us</a>
                         </li>
+                        <li class="nav__item">
+                            <a href="#login" class="nav__link">Log in</a>
+                        </li>
+                        <li class="nav__item">
+                            <button class="signup__btn">Sign Up</button>
+                        </li>
                     </ul>
             </div>
         </nav>
