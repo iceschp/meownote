@@ -636,6 +636,7 @@ header nav div.settings ul li.settings__darkmode button svg {
 .nav__close, 
 .nav__toggle {
   color: #282828;
+  text-decoration: none;
 }
 
 .container {
@@ -648,7 +649,7 @@ header nav div.settings ul li.settings__darkmode button svg {
   display: flex;
   align-items: center;
   column-gap: .25rem;
-  font-weight: var(--font-medium);
+  font-weight: bold;
 }
 
 .nav__logo-img {
@@ -658,5 +659,52 @@ header nav div.settings ul li.settings__darkmode button svg {
 .nav__toggle {
   display: inline-flex;
   font-size: 1.25rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 4rem 0;
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: 0 1px 4px hsla(0, 4%, 15%, .1);
+    transition: .4s;
+  }
+}
+
+.nav__img {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-15deg);
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.nav__link {
+  color: #282828;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  color: #3C41E6;
+}
+
+.nav__close {
+  font-size: 2rem;
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
   cursor: pointer;
 }
