@@ -45,7 +45,3 @@ export const Projects = ({ activeValue = null }) => {
     ))
   );
 };
-
-Projects.propTypes = {
-  activeValue: PropTypes.bool,
-};

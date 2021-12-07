@@ -4,10 +4,12 @@ import {
     FaInbox,
     FaRegCalendarAlt,
     FaRegCalendar,
+    FaMusic
 } from "react-icons/fa";
 import { useSelectedProjectValue } from "../../context";
 import { AddProject } from "../AddProject";
 import { Projects } from "../Projects";
+import { Spotify } from "../Spotify";
 
 export const Sidebar = () => {
     const { setSelectedProject } = useSelectedProjectValue();
@@ -105,6 +107,18 @@ export const Sidebar = () => {
 
     <ul className="sidebar__projects">{ showProjects && <Projects/> }</ul>
         { showProjects && < AddProject/> }
+    
+    <div
+        className="sidebar__middle"
+        aria-label="Show Spotify playlist"
+        role="button"
+        tabIndex={0}
+    >
+        <span>
+            <FaMusic />
+        </span>
+        <span><h2>Spotify</h2></span>
+    </div>
 </div>
 );
 };
