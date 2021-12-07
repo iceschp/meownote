@@ -614,3 +614,49 @@ header nav div.settings ul li.settings__darkmode button svg {
   .task-date__list li div:nth-child(1) span:first-of-type svg {
     fill: grey;
   }
+
+/* Home page */
+.Navbar {
+  width: 100%;
+  background-color: #F7F5F4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+.NavbarHomepage {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo, 
+.nav__close, 
+.nav__toggle {
+  color: #282828;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-weight: var(--font-medium);
+}
+
+.nav__logo-img {
+  width: 5rem;
+}
+
+.nav__toggle {
+  display: inline-flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
