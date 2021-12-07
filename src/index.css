@@ -688,6 +688,7 @@ header nav div.settings ul li.settings__darkmode button svg {
   flex-direction: column;
   align-items: center;
   row-gap: 1.5rem;
+  list-style-type: none;
 }
 
 .nav__link {
@@ -706,4 +707,37 @@ header nav div.settings ul li.settings__darkmode button svg {
   top: .5rem;
   right: 1rem;
   cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 6.5rem 0 2rem;
+  }
+
+  .nav {
+    height: calc(var(3.5rem) + 1.5rem);
+    column-gap: 3rem;
+  }
+  .nav__toggle, 
+  .nav__close, 
+  .nav__img {
+    display: none;
+  }
+  .nav__menu {
+    margin-left: auto;
+  }
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
