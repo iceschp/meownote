@@ -8,7 +8,7 @@ export const Navbar = () => {
         <nav class="NavbarHomepage container">
             <a href="#" class="nav__logo">
                 <img src="/images/meownote-logo.png" alt="meownote logo" class="nav__logo-img"/> 
-                Meow note
+                Meow Note
             </a>
 
             <div class="nav__menu" id="nav-menu">
