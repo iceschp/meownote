@@ -5,7 +5,26 @@ export const Navbar = () => {
 
     return (
         <div className="Navbar">
-        <h1>Navbar</h1>
+        <nav class="NavbarHomepage container">
+            <a href="#" class="nav__logo">
+                <img src="/images/meownote-logo.png" alt="meownote logo" class="nav__logo-img"/> 
+                Meow note
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#features" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#Resource" class="nav__link">Resource</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#AboutUs" class="nav__link">About Us</a>
+                        </li>
+                    </ul>
+            </div>
+        </nav>
         </div>
     )
 };
