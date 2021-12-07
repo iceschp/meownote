@@ -618,15 +618,14 @@ header nav div.settings ul li.settings__darkmode button svg {
 /* Home page */
 .Navbar {
   width: 100%;
-  background-color: #F7F5F4;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: var(--z-fixed);
+  z-index: 100;
 }
 
 .NavbarHomepage {
-  height: var(--header-height);
+  height: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -641,8 +640,8 @@ header nav div.settings ul li.settings__darkmode button svg {
 
 .container {
   max-width: 968px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .nav__logo {
@@ -665,7 +664,7 @@ header nav div.settings ul li.settings__darkmode button svg {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    background-color: var(--body-color);
+    background-color: #F7F5F4;
     top: -100%;
     left: 0;
     width: 100%;
