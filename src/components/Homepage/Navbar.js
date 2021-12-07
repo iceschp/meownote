@@ -14,7 +14,7 @@ export const Navbar = () => {
             <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#features" class="nav__link active-link">Home</a>
+                            <a href="#features" class="nav__link active-link">Features</a>
                         </li>
                         <li class="nav__item">
                             <a href="#Resource" class="nav__link">Resource</a>
