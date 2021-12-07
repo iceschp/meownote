@@ -3,6 +3,7 @@ import { Header } from "./components/layout/Header";
 import { Content } from "./components/layout/Content";
 import { ProjectsProvider, SelectedProjectProvider } from "./context";
 import { Navbar } from "./components/Homepage/Navbar";
+import { HomeContent } from "./components/Homepage/HomeContent";
 
 export const App = () => {
   // { darkModeDefault = false }
@@ -26,8 +27,8 @@ export const App = () => {
   const x = 1;
   return(
     <div>
-    <Navbar/>
-      <h1>test</h1>
+      <Navbar />
+      <HomeContent />
     </div>
   )
 };
