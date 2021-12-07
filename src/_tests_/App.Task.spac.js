@@ -88,7 +88,7 @@ jest.mock('../context',()=> ({
            const showQuickAddTask = true;
            const setShowQuickAddTask= jest.fn(() => !showQuickAddTask);
            const {queryByTestId} = render (
-               <AddTask  showAddTaskMain setShowQuickAddTask={setShowQuickAddTask}
+               <AddTask  showAddTaskMain setShowQuickAddTask={setShowQuickAddTask} showQuickAddTask
                />
            );
            fireEvent.click(queryByTestId('show-main-action'));
@@ -98,5 +98,6 @@ jest.mock('../context',()=> ({
            expect(setShowQuickAddTask).toHaveBeenCalled();
            
         });
+        it('render <AddTask /> and adds a task to the inbox and cl')
      });
  });
