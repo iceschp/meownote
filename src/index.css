@@ -788,4 +788,25 @@ header nav div.settings ul li.settings__darkmode button svg {
   .content__box img {
     width: 500px;
   }
+
+  .bottom__box{
+    padding: 0 10rem 0 10rem;
+    margin: auto;
+  }
+  .bottom__box button {
+    background-color: #000;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid;
+  }
+  .bottom__box button:hover {
+    background-color: #3C41E6;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid;
+  }
 }
