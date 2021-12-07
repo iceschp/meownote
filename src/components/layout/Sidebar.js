@@ -113,6 +113,9 @@ export const Sidebar = () => {
         aria-label="Show Spotify playlist"
         role="button"
         tabIndex={0}
+        onClick={() => 
+            <Spotify />
+        }
     >
         <span>
             <FaMusic />
