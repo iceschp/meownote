@@ -687,7 +687,7 @@ header nav div.settings ul li.settings__darkmode button svg {
     font-size: 1.5rem;
   }
   .content__box img {
-    width: 500px;
+    width: 300px;
   }
 }
 
@@ -763,11 +763,34 @@ header nav div.settings ul li.settings__darkmode button svg {
     font-size: 1.5rem;
   }
   .content__box img {
-    width: 500px;
+    width: 400px;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 960px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content__box {
+    padding: 6rem 10rem 0 10rem;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+  }
+  .content__box h1{
+    font-size: 4rem;
+  }
+  .content__box p {
+    font-size: 1.5rem;
+  }
+  .content__box img {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -788,25 +811,25 @@ header nav div.settings ul li.settings__darkmode button svg {
   .content__box img {
     width: 500px;
   }
+}
 
-  .bottom__box{
-    padding: 0 10rem 0 10rem;
-    margin: auto;
-  }
-  .bottom__box button {
-    background-color: #000;
-    color: #fff;
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    border: solid;
-  }
-  .bottom__box button:hover {
-    background-color: #3C41E6;
-    color: #fff;
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
-    border: solid;
-  }
+.bottom__box{
+  padding: 0 10rem 0 10rem;
+  margin: auto;
+}
+.bottom__box button {
+  background-color: #000;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: solid;
+}
+.bottom__box button:hover {
+  background-color: #3C41E6;
+  color: #fff;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: solid;
 }
