@@ -9,17 +9,17 @@ export default class Resource extends Component {
                     <div className="column">
                         <h2>Adobe Xd</h2>
                         <p>All in one UI/UX design tool.</p>
-                        <image src="/images/xd.png" />
+                        <img src="/images/xd.png"/>
                     </div>
                     <div className="column">
                         <h2>Javascript</h2>
                         <p>is the world’s most popular programming language.</p>
-                        <image src="/images/javascript.png" />
+                        <img src="/images/javascript.png"/>
                     </div>
                     <div className="column">
                         <h2>React JS</h2>
                         <p>makes it painless to create interactive UIs.</p>
-                        <image src="/public/images/react.png" />
+                        <img src="/images/react.png"/>
                     </div>
                 </div>
             </div>

@@ -860,6 +860,8 @@ header nav div.settings ul li.settings__darkmode button svg {
   margin: 5px;
   padding: 20px;
   text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.12);
 }
 
 .column img {
