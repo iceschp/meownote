@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class Features extends Component {
     render() {
         return (
-            <div className="feature__box">
+            <div className="detail__box">
                 <h1>Features</h1>
                 <div className="row">
                     <div className="column">
