@@ -4,7 +4,10 @@ import {
     Switch,
     Route,
     Link,
+    Routes,
 } from "react-router-dom";
+import Features from "./Features";
+import { HomeContent } from "./HomeContent";
 
 export const Navbar = () => {
     const test = 1;
@@ -13,7 +16,7 @@ export const Navbar = () => {
         <Router>
         <div className="Navbar">
         <nav class="NavbarHomepage container">
-            <Link as={Link} to={"/"} class="nav__logo">
+            <Link as={Link} to={"/home"} class="nav__logo">
                 <img src="/images/meownote-logo.png" alt="meownote logo" class="nav__logo-img"/> 
                 Meow Note
             </Link>
@@ -38,6 +41,13 @@ export const Navbar = () => {
                     </ul>
             </div>
         </nav>
+        </div>
+        
+        <div>
+            <Routes>
+                <Route path="/home" element={ <HomeContent /> } />
+                <Route path="/features" element={ <Features /> } />
+            </Routes>
         </div>
         </Router>
     )
