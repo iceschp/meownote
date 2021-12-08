@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Checkbox } from './Checkbox';
+import { AddTask } from './AddTask';
 import { useTasks } from '../hooks';
 import { collatedTasks } from '../constants';
 import { getTitle, getCollatedTitle, collatedTasksExist } from '../helpers';
 import { useSelectedProjectValue, useProjectsValue } from '../context';
-import { AddTask } from './AddTask';
 
 export const Tasks = () => {
   const { selectedProject } = useSelectedProjectValue();
@@ -27,7 +27,7 @@ export const Tasks = () => {
   }
 
   useEffect(() => {
-    document.title = `${projectName}: meownote-web`;
+    document.title = `${projectName}: Todoist`;
   });
 
   return (

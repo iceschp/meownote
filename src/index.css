@@ -47,7 +47,7 @@ header {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   height: 70px;
-  z-index: 400;
+  z-index: 600;
   position: fixed;
   top: 0;
   width: 100%;
@@ -146,18 +146,15 @@ header nav div.settings ul li.settings__darkmode button svg {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 266px;
-  height: calc(100vh);
-  padding-top: 74px;
+  width: 300px;
+  height: 90vh;
+  padding-top: 90px;
   position: fixed;
-  overflow-x: hidden;
-  overflow-y: hidden;
   border-right: 1px solid #f1f1f1;
   background-color: #fafafa;
   
   
 }
-
 /* Show Confirm Delete
   ============================================ */
 
@@ -188,7 +185,7 @@ header nav div.settings ul li.settings__darkmode button svg {
   align-items: center;
 }
 .sidebar__project-delete {
-  padding: 10px;
+  padding: 15px;
   margin-right: 10px;
   display: none;
 }
@@ -216,6 +213,10 @@ header nav div.settings ul li.settings__darkmode button svg {
 }
 .sidebar__projects {
   padding-left: 3px;
+}
+
+ul.sidebar_generic li{
+  padding: 5px;
 }
 .sidebar__project {
   display: -webkit-box;
@@ -257,8 +258,8 @@ header nav div.settings ul li.settings__darkmode button svg {
   font-weight: bold;
   padding-bottom: 20px;
 }
-.sidebar__generic li {
-  list-style-type: none;
+ul .sidebar_generic li {
+   list-style-type: none;
   color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,8 +267,9 @@ header nav div.settings ul li.settings__darkmode button svg {
   cursor: pointer;
   line-height: 1.5;
   font-size: 15px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  
 }
 .sidebar__generic li div:nth-child(1) {
   display: -webkit-box;
@@ -275,6 +277,7 @@ header nav div.settings ul li.settings__darkmode button svg {
   display: flex;
   padding: 10px 0 10px 10px;
   width: 100%;
+  
 }
 .sidebar__generic li div:nth-child(1) span:first-of-type {
   margin-right: 10px;
@@ -285,12 +288,14 @@ header nav div.settings ul li.settings__darkmode button svg {
   -ms-flex-align: center;
   align-items: center;
 }
-.sidebar__generic li div:nth-child(1) span:first-of-type svg {
+.sidebar_generic li div:nth-child(1) span:first-of-type svg {
   width: 18px;
   height: 18px;
-  color: #555;
+  color: rgb(85, 85, 85);
+  margin-right: 10px;
+  
 }
-.sidebar__generic li.active, .sidebar__generic li:hover {
+.sidebar_generic li.active, .sidebar_generic li:hover {
   font-weight: bold;
   background-color: white;
 }
@@ -313,42 +318,34 @@ header nav div.settings ul li.settings__darkmode button svg {
 .project-delete-modal__inner {
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 11px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 4px 11px;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  top: 85px;
-  border-radius: 3px;
+  position:relative;
   z-index: 99;
+  border-radius: 3px;
   width: 200px;
-  height: 200px;
+  padding: 10px;
+  bottom: 150px;
   top: 10px;
-  right: 0;
-  margin: 50px;
+  
   background-color: white;
 }
 .project-delete-modal__inner p {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   line-height: normal;
   font-weight: normal;
   font-size: 15px;
   
-  
 }
 .project-delete-modal__inner button {
-  width: '50px';
+  width: 60px;
   background-color: #db4c3f;
   color: #fff !important;
   border: 1px solid transparent;
-  margin-right: 5px;
-  margin-top: 10px;
   font-weight: bold;
   font-size: 13px !important;
   line-height: 17px;
-  padding: 6px 12px 7px 12px;
+  padding: 10px;
   position: relative;
-  display: inline-block;
-  white-space: nowrap;
   border-radius: 3px !important;
   text-decoration: none !important;
   text-align: center;
@@ -568,7 +565,7 @@ header nav div.settings ul li.settings__darkmode button svg {
   }
 
 .add-project__submit {
-    width: '100px';
+    width: 100px;
     background-color: #db4c3f;
     color: #fff !important;
     border: 1px
