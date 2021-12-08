@@ -847,3 +847,24 @@ header nav div.settings ul li.settings__darkmode button svg {
   border-radius: 10px;
   border: solid;
 }
+
+.feature__box {
+  padding: 6rem 8rem 0 8rem;
+  margin: auto;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  background-color: #fff;
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
