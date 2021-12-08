@@ -13,21 +13,21 @@ export const Navbar = () => {
         <Router>
         <div className="Navbar">
         <nav class="NavbarHomepage container">
-            <a href="#" class="nav__logo">
+            <Link as={Link} to={"/"} class="nav__logo">
                 <img src="/images/meownote-logo.png" alt="meownote logo" class="nav__logo-img"/> 
                 Meow Note
-            </a>
+            </Link>
 
             <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#features" class="nav__link active-link">Features</a>
+                            <Link as={Link} to={"/features"} class="nav__link">Features</Link>
                         </li>
                         <li class="nav__item">
-                            <a href="/src/source.js" class="nav__link">Resource</a>
+                            <Link as={Link} to={"/resource"} class="nav__link">Resource</Link>
                         </li>
                         <li class="nav__item">
-                            <a href="#AboutUs" class="nav__link">About Us</a>
+                            <Link as={Link} to={"/aboutus"} class="nav__link">About Us</Link>
                         </li>
                         <li class="nav__item">
                             <a href="#login" class="nav__link">Log in</a>
