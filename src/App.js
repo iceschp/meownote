@@ -28,7 +28,6 @@ export const App = () => {
   return(
     <div>
       <Navbar />
-      <HomeContent />
     </div>
   )
 };
