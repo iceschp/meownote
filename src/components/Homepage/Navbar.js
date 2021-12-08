@@ -6,8 +6,9 @@ import {
     Link,
     Routes,
 } from "react-router-dom";
-import Features from "./Features";
 import { HomeContent } from "./HomeContent";
+import Features from "./Features";
+import Resource from "./Resource";
 
 export const Navbar = () => {
     const test = 1;
@@ -47,6 +48,7 @@ export const Navbar = () => {
             <Routes>
                 <Route path="/home" element={ <HomeContent /> } />
                 <Route path="/features" element={ <Features /> } />
+                <Route path="/resource" element={ <Resource /> } />
             </Routes>
         </div>
         </Router>
