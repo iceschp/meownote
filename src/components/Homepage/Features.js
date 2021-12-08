@@ -7,6 +7,7 @@ export default class Features extends Component {
                 <h1>Features</h1>
                 <div className="row">
                     <div className="column">
+                        <h1>test</h1>
                         <h2>Organizaed</h2>
                         <p>A lot of folders as much as you want</p>
                         <img src="/images/organized.png"/>
