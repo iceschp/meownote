@@ -17,7 +17,7 @@ export const Navbar = () => {
         <Router>
         <div className="Navbar">
         <nav class="NavbarHomepage container">
-            <Link as={Link} to={"/home"} class="nav__logo">
+            <Link as={Link} to={"/homepage"} class="nav__logo">
                 <img src="/images/meownote-logo.png" alt="meownote logo" class="nav__logo-img"/> 
                 Meow Note
             </Link>
