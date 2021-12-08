@@ -46,7 +46,7 @@ export const Navbar = () => {
         
         <div>
             <Routes>
-                <Route path="/home" element={ <HomeContent /> } />
+                <Route path="/homepage" element={ <HomeContent/> } />
                 <Route path="/features" element={ <Features /> } />
                 <Route path="/resource" element={ <Resource /> } />
             </Routes>
