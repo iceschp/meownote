@@ -9,6 +9,7 @@ import {
 import { HomeContent } from "./HomeContent";
 import Features from "./Features";
 import Resource from "./Resource";
+import Aboutus from "./Aboutus";
 
 export const Navbar = () => {
     const test = 1;
@@ -49,6 +50,7 @@ export const Navbar = () => {
                 <Route path="/homepage" element={ <HomeContent/> } />
                 <Route path="/features" element={ <Features /> } />
                 <Route path="/resource" element={ <Resource /> } />
+                <Route path="/aboutus" element={ <Aboutus /> } />
             </Routes>
         </div>
         </Router>

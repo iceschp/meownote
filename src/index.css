@@ -874,3 +874,24 @@ header nav div.settings ul li.settings__darkmode button svg {
   display: table;
   clear: both;
 }
+
+.aboutus__box {
+  padding: 6rem 8rem 0 8rem;
+  margin: auto;
+  text-align: center;
+}
+
+.container__row {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.column-1 {
+  text-align: center;
+}
+
+.column-1 img {
+  width: 50%;
+  border-radius: 50%;
+}
