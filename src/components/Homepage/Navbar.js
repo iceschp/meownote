@@ -1,9 +1,16 @@
 import React, { useState } from "react";
+import { 
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+} from "react-router-dom";
 
 export const Navbar = () => {
     const test = 1;
 
     return (
+        <Router>
         <div className="Navbar">
         <nav class="NavbarHomepage container">
             <a href="#" class="nav__logo">
@@ -32,5 +39,6 @@ export const Navbar = () => {
             </div>
         </nav>
         </div>
+        </Router>
     )
 };
