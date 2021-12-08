@@ -862,6 +862,10 @@ header nav div.settings ul li.settings__darkmode button svg {
   text-align: center;
 }
 
+.column img {
+  height: 300px;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
