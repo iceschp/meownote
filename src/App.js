@@ -4,6 +4,8 @@ import { Content } from "./components/layout/Content";
 import { ProjectsProvider, SelectedProjectProvider } from "./context";
 import { Navbar } from "./components/Homepage/Navbar";
 import { HomeContent } from "./components/Homepage/HomeContent";
+import {Login} from "./components/Homepage/Login"
+import {Signup} from "./components/Homepage/Signup"
 
 export const App = () => {
   // { darkModeDefault = false }

@@ -10,7 +10,8 @@ import { HomeContent } from "./HomeContent";
 import Features from "./Features";
 import Resource from "./Resource";
 import Aboutus from "./Aboutus";
-
+import Signup from "./Signup";
+import Login from "./Login";
 export const Navbar = () => {
     const test = 1;
 
@@ -35,10 +36,10 @@ export const Navbar = () => {
                             <Link as={Link} to={"/aboutus"} class="nav__link">About Us</Link>
                         </li>
                         <li class="nav__item">
-                            <a href="#login" class="nav__link">Log in</a>
+                            <Link as={Link} to={"/signup"}  class="nav__link">Sign up</Link>
                         </li>
                         <li class="nav__item">
-                            <button class="signup__btn">Sign Up</button>
+                            <button Link as={Link} to={"/login"}  class="signup__btn">Log in</button>
                         </li>
                     </ul>
             </div>
@@ -51,6 +52,8 @@ export const Navbar = () => {
                 <Route path="/features" element={ <Features /> } />
                 <Route path="/resource" element={ <Resource /> } />
                 <Route path="/aboutus" element={ <Aboutus /> } />
+                <Route path="/login" element={ <Login /> } />
+                <Route path="/Signup" element={ <Signup /> } />
             </Routes>
         </div>
         </Router>
