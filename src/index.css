@@ -150,6 +150,15 @@ header nav div.settings ul li.settings__add {
   margin-right: 15px;
   font-size: 30px;
 }
+
+header nav div.settings ul li.settings__spotify button {
+  background-color: transparent;
+  border: 0;
+  color: rgba(158, 6, 151, 0.867);
+  cursor: pointer;
+  font-size: 20px;
+}
+
 header nav div.settings ul li.settings__add button {
   background-color: transparent;
   border: 0;
@@ -168,6 +177,7 @@ header nav div.settings ul li.settings__darkmode button {
 header nav div.settings ul li.settings__darkmode button svg {
   width: 20px;
   height: 20px;
+  margin-right: 15px;
 }
 .sidebar {
   -webkit-touch-callout: none;
@@ -181,8 +191,6 @@ header nav div.settings ul li.settings__darkmode button svg {
   position: fixed;
   border-right: 1px solid #f1f1f1;
   background-color: #fafafa;
-  
-  
 }
 /* Show Confirm Delete
   ============================================ */
