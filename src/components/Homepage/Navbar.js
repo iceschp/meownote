@@ -36,7 +36,7 @@ export const Navbar = () => {
                             <Link as={Link} to={"/aboutus"} class="nav__link">About Us</Link>
                         </li>
                         <li class="nav__item">
-                            <Link as={Link} to={"/signup"}  class="nav__link">Sign up</Link>
+                            <Link as={Link} to={"/Signup"}  class="nav__link">Sign up</Link>
                         </li>
                         <li class="nav__item">
                             <button Link as={Link} to={"/login"}  class="signup__btn">Log in</button>
