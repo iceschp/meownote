@@ -35,7 +35,7 @@ ul {
 .darkmode header {
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
-  background-color: #282828;
+  background-color: #7579fc;
   border-color: transparent;
 }
 
@@ -154,7 +154,7 @@ header nav div.settings ul li.settings__add {
 header nav div.settings ul li.settings__add button {
   background-color: transparent;
   border: 0;
-  color: rgba(158, 6, 151, 0.867);
+  color: #16197c;
   cursor: pointer;
 }
 header nav div.settings ul li.settings__darkmode button {
@@ -323,7 +323,7 @@ ul .sidebar_generic li {
 .sidebar_generic li div:nth-child(1) span:first-of-type svg {
   width: 18px;
   height: 18px;
-  color: rgb(180, 3, 157);
+  color: #1e23a3;
   margin-right: 10px;
   
 }
@@ -369,7 +369,7 @@ ul .sidebar_generic li {
 }
 .project-delete-modal__inner button {
   width: 60px;
-  background-color: #db4c3f;
+  background-color: #16197c;
   color: #fff !important;
   border: 1px solid transparent;
   font-weight: bold;
@@ -518,7 +518,7 @@ ul .sidebar_generic li {
 .add-task__project, .add-task__date {
   cursor: pointer;
   float: right;
-  color: rgb(202, 3, 192);
+  color: #3C41E6;
   margin: 20px 15px;
 
 }
@@ -549,7 +549,7 @@ ul .sidebar_generic li {
 }
 .add-task__submit {
   width: 90px;
-  background-color: #db089c;
+  background-color: #3C41E6;
   color: #fff !important;
   border: 1px solid transparent;
   margin-right: 5px;
@@ -576,13 +576,13 @@ ul .sidebar_generic li {
   margin-bottom: 20px;
 }
 .add-task__plus, .add-project__plus {
-  color: #5f0436;
+  color: #131792;
   font-size: 18px;
   
 }
 .add-task__text, .add-project__text {
   display: inline-block;
-  color: #e709c2;
+  color: #3C41E6;
   font-size: 14px;
   margin-left: 15px;
   font-weight: 700;
@@ -602,7 +602,7 @@ ul .sidebar_generic li {
 
 .add-project__submit {
     width: 100px;
-    background-color: hsl(295, 90%, 49%);
+    background-color: #1117c0; 
     color: #fff !important;
     border: 1px solid transparent;
     margin-right: 5px;
@@ -648,7 +648,7 @@ ul .sidebar_generic li {
     margin-right: 10px;
   }
   .task-date__list li div:nth-child(1) span:first-of-type svg {
-    fill: #7a0166;
+    fill: #3C41E6;
   }
 
 .spotify__button {
