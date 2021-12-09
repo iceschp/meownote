@@ -45,7 +45,6 @@ export const Navbar = () => {
             </div>
         </nav>
         </div>
-        
         <div>
             <Routes>
                 <Route path="/homepage" element={ <HomeContent/> } />
@@ -53,7 +52,7 @@ export const Navbar = () => {
                 <Route path="/resource" element={ <Resource /> } />
                 <Route path="/aboutus" element={ <Aboutus /> } />
                 <Route path="/login" element={ <Login /> } />
-                <Route path="/Signup" element={ <Signup /> } />
+                <Route path="/signup" element={ <Signup /> } />
             </Routes>
         </div>
         </Router>

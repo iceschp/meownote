@@ -14,9 +14,9 @@ export default class SignUp extends Component {
             })
         }
         return (
-            <div className="container mt-5">
+            <div className="container_Signin">
             <form>
-                <h3>Sign Up</h3>
+                <h3 className="headerSignup">Sign Up</h3>
 
                 <div className="form-group">
                     <label>First name</label>
@@ -38,7 +38,7 @@ export default class SignUp extends Component {
                     <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
+                <button type="submit" className="signup__btn">Sign Up</button>
                 <p className="forgot-password text-right">
                     Already registered <a href="#">Login?</a>
                 </p>

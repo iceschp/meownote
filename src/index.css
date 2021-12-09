@@ -932,10 +932,10 @@ ul .sidebar_generic li {
   width: 50%;
   border-radius: 50%;
 }
-    /* login*/
+    /* signup*/
 .signupbtn{
   transition: 0.3s;
-  background-color: #3C41E6;
+  background-color: #d13a0c;
   color: #fff;
   font-weight: bold;
   width: 200px;
@@ -943,4 +943,20 @@ ul .sidebar_generic li {
   border-radius: 10px;
   border: solid;
     } 
-    
+.headerSignup{
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.container_Signin{
+  margin: 150px;
+} 
+.form-group{
+  margin: 20px;
+}
+.form-group label {
+  margin-bottom: 15px;
+}
+.forgot-password {
+  margin-top: 10px;
+}
