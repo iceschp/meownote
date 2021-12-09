@@ -42,7 +42,7 @@ export default class SignUp extends Component {
                 <p className="forgot-password text-right">
                     Already registered <a href="#">Login?</a>
                 </p>
-                <button onClick={SignUpWithFirebase}>Sign up with Google</button>
+                <button class="signupbtn" onClick={SignUpWithFirebase}>Sign up with Google</button>
             </form>
             </div>
         );

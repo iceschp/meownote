@@ -933,5 +933,14 @@ ul .sidebar_generic li {
   border-radius: 50%;
 }
     /* login*/
-    
+.signupbtn{
+  transition: 0.3s;
+  background-color: #3C41E6;
+  color: #fff;
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: solid;
+    } 
     
