@@ -12,7 +12,7 @@ export const App = ({ darkModeDefault = false }) => {
   console.log(darkModeDefault)
 
   return (
-    <Router>
+    <div>
       <SelectedProjectProvider>
         <ProjectsProvider>
           <main
@@ -32,8 +32,7 @@ export const App = ({ darkModeDefault = false }) => {
         <h2>✨ Spotify Playlist ☕️</h2>
         <iframe src="https://open.spotify.com/embed/playlist/59LUwJVpBHWjxyKDDuz4Ld" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </Spotify>
-      
-    </Router>
+      </div>
   );
 };
 
