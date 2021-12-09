@@ -1,50 +1,67 @@
-import React, { Component } from "react";
-import { firebase } from "../../firebase";
+import React, { useState } from 'react'
+import { Navigate } from 'react-router-dom'
+import firebase, { auth, signInwithGoogle } from '../../firebase';
 
-export default class SignUp extends Component {
-    render() {
-        const SignUpWithFirebase =()=> {
-            var google_provider = new firebase.auth.GoogleAuthProvider();
-            firebase.auth().signUpWithPopup(google_provider)
-            .then((re) =>{
-                console.log(re);
-            })
-            .catch((err)=>{
-                console.log(err);
-            })
+
+
+
+const SignUp = () => {
+    const signInwithGoogle = () => {
+        const provider = new GoogleAuthProvider();
+        signInwithPopup(authentication, provider)
+        .then((re)=>{
+            console.log(re);
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    }
+    const [currentUser, setCurrentUser] = useState(null);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const { email, password } = e.target.elements;
+
+        try {
+
+            firebaseConfig.auth().createUserWithEmailAndPassword(email.value, password.value);
+            setCurrentUser(true);
+
+        } catch(error) {
+            alert(error);
         }
-        return (
-            <div className="container_Signin">
-            <form>
-                <h3 className="headerSignup">Sign Up</h3>
+    }
 
-                <div className="form-group">
-                    <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
-                </div>
+    if (currentUser) {
+        return <Navigate to="/src/components/Tasks.js"/>;
+    }
 
-                <div className="form-group">
-                    <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
-                </div>
-
-                <div className="form-group">
-                    <label>Email address</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
-                </div>
-
-                <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
-                </div>
-
-                <button type="submit" className="signup__btn">Sign Up</button>
-                <p className="forgot-password text-right">
-                    Already registered <a href="#">Login?</a>
-                </p>
-                <button class="signupbtn" onClick={SignUpWithFirebase}>Sign up with Google</button>
+    return (
+        <>
+            <div className="containerLogin">
+            <h1 class="headerSignup">Sign Up</h1>
+            <form onSubmit={handleSubmit}>
+            <div className="mb-3">
+                <label for="exampleInputEmail1" className="form-label">Email address</label>
+                <input type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div className="mb-3">
+                <label for="exampleInputPassword1" className="form-label">Password</label>
+                <input type="password" name="password" className="form-control" id="exampleInputPassword1" />
+            </div>
+            <button type="submit" className="btn btn-primary">Submit</button>
+            <div className="App">
+                <button className="signupbtn" onClick={signInwithGoogle}>
+                    Sign in with Google
+                </button>
+            </div>
+            
             </form>
             </div>
-        );
-    }
+            
+        </>
+    )
 }
+
+export default SignUp;

@@ -36,10 +36,10 @@ export const Navbar = () => {
                             <Link as={Link} to={"/aboutus"} class="nav__link">About Us</Link>
                         </li>
                         <li class="nav__item">
-                            <Link as={Link} to={"/Signup"}  class="nav__link">Sign up</Link>
+                            <Link as={Link} to={"/signup"}  class="nav__link">Sign Up</Link>
                         </li>
                         <li class="nav__item">
-                            <button Link as={Link} to={"/login"}  class="signup__btn">Log in</button>
+                       <Link as={Link} to={"/login"}  class="signup__btn">Log In</Link>
                         </li>
                     </ul>
             </div>
@@ -51,7 +51,7 @@ export const Navbar = () => {
                 <Route path="/features" element={ <Features /> } />
                 <Route path="/resource" element={ <Resource /> } />
                 <Route path="/aboutus" element={ <Aboutus /> } />
-                <Route path="/login" element={ <Login /> } />
+                <Route path="/login" element={ <Login/> } />
                 <Route path="/signup" element={ <Signup /> } />
             </Routes>
         </div>

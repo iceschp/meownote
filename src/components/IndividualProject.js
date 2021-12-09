@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaTrashAlt } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 import { useProjectsValue, useSelectedProjectValue } from '../context';
-import { firebase } from '../firebase';
+import firebase from '../firebase';
 
 export const IndividualProject = ({ project }) => {
   const [showConfirm, setShowConfirm] = useState(false);

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsMoonStarsFill } from 'react-icons/bs'
 import { AddTask } from "../AddTask";
 
+
 export const Header = ({ darkMode, setDarkMode }) => {
     const [ shouldShowMain, setShouldShowMain ] = useState(false);
     const [ showQuickAddTask, setShowQuickAddTask ] = useState(false);
@@ -34,6 +35,9 @@ export const Header = ({ darkMode, setDarkMode }) => {
               >
                 <BsMoonStarsFill />
               </button>
+            </li>
+            <li>
+              <button onClick={() => auth.signOut()}>Sign out</button>
             </li>
           </ul>
           </div>

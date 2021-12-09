@@ -880,7 +880,7 @@ ul .sidebar_generic li {
   background-color: #3C41E6;
   color: #fff;
   width: 150px;
-  height: 50px;
+  height: 150px;
   border-radius: 10px;
   border: solid;
 }
@@ -942,7 +942,10 @@ ul .sidebar_generic li {
   height: 40px;
   border-radius: 10px;
   border: solid;
-    } 
+} 
+.containerLogin{
+  margin: 150px;
+}
 .headerSignup{
   text-align: center;
   font-weight: 700;
