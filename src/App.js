@@ -3,13 +3,6 @@ import { Header } from "./components/layout/Header";
 import { Content } from "./components/layout/Content";
 import { ProjectsProvider, SelectedProjectProvider } from "./context";
 import { FaMusic } from "react-icons/fa";
-import { 
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Routes,
-} from "react-router-dom";
 import Spotify from "./components/Spotify";
 
 export const App = ({ darkModeDefault = false }) => {
