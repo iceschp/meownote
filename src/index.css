@@ -880,7 +880,7 @@ ul .sidebar_generic li {
   background-color: #3C41E6;
   color: #fff;
   width: 150px;
-  height: 150px;
+  height: 50px;
   border-radius: 10px;
   border: solid;
 }
@@ -951,15 +951,13 @@ ul .sidebar_generic li {
   font-weight: 700;
   margin-bottom: 50px;
 }
-.container_Signin{
-  margin: 150px;
-} 
-.form-group{
-  margin: 20px;
-}
-.form-group label {
-  margin-bottom: 15px;
-}
-.forgot-password {
-  margin-top: 10px;
+.Loginbtn{
+  transition: 0.3s;
+  background-color: #290cd1;
+  color: #fff;
+  font-weight: bold;
+  width: 200px;
+  height:200px;
+  border-radius: 2px;
+  margin: 10px;
 }
