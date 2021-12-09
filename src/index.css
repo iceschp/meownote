@@ -151,14 +151,6 @@ header nav div.settings ul li.settings__add {
   font-size: 30px;
 }
 
-header nav div.settings ul li.settings__spotify button {
-  background-color: transparent;
-  border: 0;
-  color: rgba(158, 6, 151, 0.867);
-  cursor: pointer;
-  font-size: 20px;
-}
-
 header nav div.settings ul li.settings__add button {
   background-color: transparent;
   border: 0;
@@ -177,7 +169,6 @@ header nav div.settings ul li.settings__darkmode button {
 header nav div.settings ul li.settings__darkmode button svg {
   width: 20px;
   height: 20px;
-  margin-right: 15px;
 }
 .sidebar {
   -webkit-touch-callout: none;
@@ -659,3 +650,71 @@ ul .sidebar_generic li {
   .task-date__list li div:nth-child(1) span:first-of-type svg {
     fill: #7a0166;
   }
+
+.spotify__button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #1db954;
+  color: #ffffff;
+  border: none;
+  box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.1);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.spotify__button:hover {
+  transition: 0.3s;
+  background-color: #000;
+  color: #fff;
+}
+
+.spotify__popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 400px;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur( 4px );
+}
+
+.popup__inner {
+  text-align: center;
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.popup__inner h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.popup__inner .close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+.popup__inner .close-btn:hover {
+  color: #ff0000;
+}
