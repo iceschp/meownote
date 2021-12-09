@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BsMoonStarsFill } from 'react-icons/bs'
 import { AddTask } from "../AddTask";
-import { FaMusic } from "react-icons/fa";
 
 export const Header = ({ darkMode, setDarkMode }) => {
     const [ shouldShowMain, setShouldShowMain ] = useState(false);
@@ -39,11 +38,13 @@ export const Header = ({ darkMode, setDarkMode }) => {
           </ul>
           </div>
         </nav>
+        
         <AddTask 
           showAddTaskMain={false}
           shouldShowMain={shouldShowMain}
           showQuickAddTask={showQuickAddTask}
           setShowQuickAddTask={setShowQuickAddTask} />
+        
       </header>
     )
 };
