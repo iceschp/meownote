@@ -56,7 +56,6 @@ const SignUp = () => {
                     Sign in with Google
                 </button>
             </div>
-            
             </form>
             </div>
             
