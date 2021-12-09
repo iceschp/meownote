@@ -19,7 +19,7 @@ export const Navbar = () => {
         <Router>
         <div className="Navbar">
         <nav class="NavbarHomepage container">
-            <Link as={Link} to={"/homepage"} class="nav__logo">
+            <Link as={Link} to={"/"} class="nav__logo">
                 <img src="/images/meownote-logo.png" alt="meownote logo" class="nav__logo-img"/> 
                 Meow Note
             </Link>
@@ -46,8 +46,8 @@ export const Navbar = () => {
         </nav>
         </div>
         <div>
-            <Routes>
-                <Route path="/homepage" element={ <HomeContent/> } />
+            <Routes basename={'homepage'}>
+                <Route path="/" element={ <HomeContent/> } />
                 <Route path="/features" element={ <Features /> } />
                 <Route path="/resource" element={ <Resource /> } />
                 <Route path="/aboutus" element={ <Aboutus /> } />
