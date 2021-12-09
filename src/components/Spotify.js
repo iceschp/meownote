@@ -1,11 +1,14 @@
-import React, { Usestate } from "react";
+import React, { Component } from "react";
 
-export const Spotify = ({}) => {
-    const test = 1;
-
-    return (
-        <div>
-            <iframe src="https://open.spotify.com/embed/playlist/59LUwJVpBHWjxyKDDuz4Ld" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+function Spotify(props) {
+    return (props.trigger) ? (
+        <div className="spotify__popup">
+            <div className="popup__inner">
+                <button className="close-btn" onClick={() => props.setTrigger(false)} title="Close tab">X</button>
+                {props.children}
+            </div>
         </div>
-    )
-}
+    ) : "";
+};
+
+export default Spotify;

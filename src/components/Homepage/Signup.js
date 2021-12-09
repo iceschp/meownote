@@ -2,9 +2,6 @@ import React, { useState } from 'react'
 import { Navigate } from 'react-router-dom'
 import firebase, { auth, signInwithGoogle } from '../../firebase';
 
-
-
-
 const SignUp = () => {
     const signInwithGoogle = () => {
         const provider = new GoogleAuthProvider();
