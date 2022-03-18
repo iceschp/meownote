@@ -5,6 +5,7 @@ import { ProjectsProvider, SelectedProjectProvider } from "./context";
 import { FaMusic } from "react-icons/fa";
 import Spotify from "./components/Spotify";
 
+
 export const App = ({ darkModeDefault = false }) => {
   const [darkMode, setDarkMode] = useState(darkModeDefault);
   const [buttonPopup, setButtonPopup] = useState(false);

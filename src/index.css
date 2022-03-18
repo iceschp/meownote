@@ -388,6 +388,7 @@ ul .sidebar_generic li {
   font-size: 14px;
   margin: 2px 5px;
   font-weight: normal;
+  margin: c;
 }
 .content {
   display: grid;
@@ -411,7 +412,7 @@ ul .sidebar_generic li {
   padding-right: 40px;
   padding-top: 80px;
   padding-bottom: 84px;
- 
+  
   /* Add Task
   ============================================ */
 }
@@ -463,6 +464,7 @@ ul .sidebar_generic li {
   display: block;
   border: 1px solid gray;
   border-radius: 16px;
+  text-align: center;
 }
 .add-task__overlay {
   background: rgba(102, 102, 102, 0.5);
@@ -477,9 +479,10 @@ ul .sidebar_generic li {
   transition: opacity 0.2s ease-in;
   height: calc(100vh);
 }
-.add-task__overlay .add-task__main {
   /* Darkmode
   ============================================ */
+.add-task__overlay .add-task__main {
+
   overflow: visible;
   margin-bottom: 20px;
   margin-top: 55px;
